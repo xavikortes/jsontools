@@ -1,0 +1,144 @@
+/*
+	jsontools v1.0
+	2015 // xavikortes
+	https://github.com/xavikortes/jsontools
+*/
+
+* {
+	padding: 0px;
+	margin: 0px;
+}
+
+body, html {
+	height: 100%;
+	width: 100%;
+}
+
+body {
+	bottom: 0px;
+    left: 0px;
+    overflow: hidden;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+
+.oculto {
+	display: none;
+}
+
+pre {
+	border-left: 1px solid #7A7D76;
+	line-height: 18px;
+	font-size: 13px;
+}
+
+ul, ol {
+	list-style-type: none;
+}
+
+ul li, ol li {
+	margin-left: 25px;
+}
+
+.xkJson-editor {
+    float: left;
+    height: 100%;
+    position: relative;
+    width: 100%;
+}
+
+.xkJson-stringEditor {
+	border: 0px none;
+	box-sizing: border-box;
+	color: #333;
+	height: 100%;
+	margin: 0px;
+	min-width: 0px;
+	overflow: hidden;
+	padding: 30px;
+	resize: none;
+	float: left;
+	overflow: auto;
+	width: calc(50% - 5px);
+}
+
+.xkJson-objectEditor {
+	box-sizing: border-box;
+	padding: 30px;
+	background: none repeat scroll 0% 0% #FFF;
+	height: 100%;
+	float: left;
+	width: 50%;
+	overflow: auto;
+	position: relative;
+}
+
+.xkJson-brace {
+	color: #729FCF;
+}
+
+.xkJson-bracket {
+	color: #A40000;
+}
+
+.xkJson-sign {
+	color: #4A4D46;
+}
+
+.xkJson-key {
+    color: #204A87;
+}
+
+.xkJson-string {
+	color: #4E9A06;
+}
+
+.xkJson-boolean {
+	color: brown;
+}
+
+.xkJson-null {
+	color: #9A9D96;
+}
+
+.xkJson-number {
+	color: #C4A000;
+}
+
+.xkJson-error {
+	font-weight: bold;
+	color: red;
+	font-size: 1.2em;
+}
+
+.xkJson-toggleButton {
+	display: inline-block;
+	text-align: center;
+	width: 10px;
+	height: 10px;
+	line-height: 10px;
+	padding: 0px;
+	overflow: hidden;
+	cursor: pointer;
+	border-radius: 2px;
+	margin: 0px 2px;
+	border: 1px solid #7A7D76;
+	color: #7A7D76;
+}
+
+:not(.xkJson-collapsed) .xkJson-toggleButton::before {
+	content: '-';
+}
+
+.xkJson-collapsed .xkJson-toggleButton::before {
+	content: '+';
+}
+
+.xkJson-placeholder {
+	color: #7A7D76;
+}
+
+.xkJson-placeholder::before {
+	content: '...';
+}
